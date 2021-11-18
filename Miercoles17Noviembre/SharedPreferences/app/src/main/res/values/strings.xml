@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="ingresa_un_texto">Ingresa un texto</string>
+    <string name="ingresa_un_num_entero">Ingresa un número entero</string>
+</resources>
