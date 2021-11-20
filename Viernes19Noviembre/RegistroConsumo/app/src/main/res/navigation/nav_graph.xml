@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.modulocuatro.kotlin.registroconsumo.FirstFragment"
+        android:name="com.modulocuatro.kotlin.registroconsumo.view.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.modulocuatro.kotlin.registroconsumo.SecondFragment"
+        android:name="com.modulocuatro.kotlin.registroconsumo.view.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 

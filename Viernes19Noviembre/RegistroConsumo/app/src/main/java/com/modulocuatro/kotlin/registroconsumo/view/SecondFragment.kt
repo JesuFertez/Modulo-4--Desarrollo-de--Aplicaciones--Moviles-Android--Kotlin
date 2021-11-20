@@ -1,4 +1,4 @@
-package com.modulocuatro.kotlin.registroconsumo
+package com.modulocuatro.kotlin.registroconsumo.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.room.Room
+import com.modulocuatro.kotlin.registroconsumo.R
+import com.modulocuatro.kotlin.registroconsumo.data.RegistroDB
 import com.modulocuatro.kotlin.registroconsumo.databinding.FragmentSecondBinding
 
 
@@ -15,6 +18,7 @@ class SecondFragment : Fragment() {
 
 
     private val binding get() = _binding!!
+    private lateinit var database: RegistroDB
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +36,21 @@ class SecondFragment : Fragment() {
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
+        activity?.let { safeActivity ->
+
+            database = Room.databaseBuilder(
+                safeActivity.application, RegistroDB::class.java, RegistroDB.DATABASE_NAME
+            )
+                .allowMainThreadQueries()
+                .build()
+
+            saveRegistro()
+        }
+    }
+
+    private fun saveRegistro() {
+
+
     }
 
     override fun onDestroyView() {
