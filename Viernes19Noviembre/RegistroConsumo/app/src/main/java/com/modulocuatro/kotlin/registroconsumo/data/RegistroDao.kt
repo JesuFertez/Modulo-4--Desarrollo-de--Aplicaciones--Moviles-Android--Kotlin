@@ -10,7 +10,7 @@ interface RegistroDao {
     fun insert(registro:RegistroEntity)
 
     @Query("SELECT * FROM registro")
-    fun getAllRegistros():LiveData<List<RegistroEntity>>
+    fun getAllRegistros():List<RegistroEntity>
 
     @Insert
     fun inserAll(vararg registro: RegistroEntity)

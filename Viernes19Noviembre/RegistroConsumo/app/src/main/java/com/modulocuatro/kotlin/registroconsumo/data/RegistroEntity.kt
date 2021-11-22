@@ -22,7 +22,11 @@ data class RegistroEntity (
 
     @ColumnInfo(name="cantidad")
     @NotNull
-    var cantidad:Int
+    var cantidad:Int,
+
+    @ColumnInfo(name="total")
+    @NotNull
+    var total:Int
         ){
 
 }

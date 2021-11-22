@@ -12,7 +12,7 @@ class RegistroViewHolder (
           binding.run {
               tvNombreItemRecycler.text = registro.nombreItem
               tvCantidadRecycler.text= registro.cantidad.toString()
-              tvPrecioRecycler.text = registro.precioUnidad.toString()
+              tvPrecioRecycler.text = registro.total.toString()
           }
       }
 }

@@ -3,12 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,25 +20,26 @@
 
         <TextView
             android:id="@+id/tv_nombre_item_recycler"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            tools:text="Chela roja"
-            android:textAlignment="center"
             android:textSize="20sp"
-            android:textStyle="bold|italic" />
+            android:paddingLeft="10dp"
+            android:textStyle="bold|italic"
+            tools:text="Chela roja" />
 
         <TextView
             android:id="@+id/tv_cantidad_recycler"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            tools:text="10"
-            android:textAlignment="center"/>
+            android:paddingRight="30dp"
+            android:textAlignment="textEnd"
+            tools:text="10" />
 
         <TextView
             android:id="@+id/tv_precio_recycler"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:text="40000"

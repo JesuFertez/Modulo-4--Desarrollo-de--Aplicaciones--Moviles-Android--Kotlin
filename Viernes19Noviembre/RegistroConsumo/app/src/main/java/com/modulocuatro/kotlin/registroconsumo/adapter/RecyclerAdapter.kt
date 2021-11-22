@@ -2,6 +2,7 @@ package com.modulocuatro.kotlin.registroconsumo.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.modulocuatro.kotlin.registroconsumo.data.RegistroEntity
 import com.modulocuatro.kotlin.registroconsumo.databinding.ItemLayoutBinding
@@ -10,7 +11,7 @@ class RecyclerAdapter (): RecyclerView.Adapter<RegistroViewHolder>() {
 
     private lateinit var registroLista : List <RegistroEntity>
 
-    fun setRegistroLista (registroLista : List<RegistroEntity>){
+    fun setRegistroLista (registroLista: List<RegistroEntity>){
         this.registroLista = registroLista
     }
 
